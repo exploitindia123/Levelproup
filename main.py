@@ -495,12 +495,8 @@ async def aes_encrypt(payload, key, iv):
 
 
 async def get_playstore_version():
-    loop = asyncio.get_event_loop()
-    result = await loop.run_in_executor(
-        None,
-        lambda: play_scraper('com.dts.freefireth', lang='hi', country='id')
-    )
-    return result.get("version")
+async def get_playstore_version():
+    return "1.132.8"
 
 
 async def version_config():
