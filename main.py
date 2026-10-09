@@ -495,7 +495,6 @@ async def aes_encrypt(payload, key, iv):
 
 
 async def get_playstore_version():
-async def get_playstore_version():
     return "1.132.8"
 
 
